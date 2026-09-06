@@ -1,0 +1,36 @@
+.title {
+  color: var(--bulma-title-color);
+  font-size: var(--bulma-title-size);
+  font-weight: var(--bulma-title-weight);
+  line-height: var(--bulma-title-line-height);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #0f1115;
+    --bg-secondary: #1a1d23;
+    --text-primary: #e4e4e7;
+    --text-secondary: #a1a1aa;
+    --border-color: #2e3138;
+    --accent: #6366f1;
+  }
+}
+
+[data-theme=dark],
+.theme-dark {
+  --bg-primary: #0f1115;
+  --bg-secondary: #1a1d23;
+  --text-primary: #e4e4e7;
+  --text-secondary: #a1a1aa;
+  --border-color: #2e3138;
+  --accent: #6366f1;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}

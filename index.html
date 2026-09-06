@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="/PaginaPortafolio/estilos/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"> 
+</head>
+<body>
+
+    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#hero">
+                <strong>Benjamín Trujillo</strong>
+            </a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about">Sobre mi</a>
+                <a class="navbar-item" href="#projects">Proyectos</a>
+                <a class="navbar-item" href="#contact">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero is-medium is-primary" id="hero">
+        <div class="hero-body">
+            <p class="title">Benjamín Trujillo</p>
+            <p class="subtitle">Desarrollador de Software/Desarrollador de Inteligencia Artificial</p>
+        </div>
+    </section>
+
+    
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="title is-3">Sobre mí</h2>
+            <p class="content">
+                <p>Benjamín Trujillo</p>
+                <p>20 años</p>
+                <p>Estudiante de Ingeniería en Informática/Mención en Desarrollo de Inteligencia Artificial.</p>
+                <p>Cursando tercer año de la carrera en Duoc UC</p>
+            </p>
+        </div>
+    </section>
+
+    
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="title is-3">Proyectos</h2>
+            <div class="columns is-multiline">
+
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-5">Outfitly</p>
+                            <p class="content">Chat Bot con agente de IA que ayuda con outfits, para distintas ocasiones.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Ver código</a>
+                            <a href="#" class="card-footer-item">Demo</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-5">App Moviles</p>
+                            <p class="content">.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Ver código</a>
+                            <a href="#" class="card-footer-item">Demo</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-5">Nombre del proyecto</p>
+                            <p class="content">.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Ver código</a>
+                            <a href="#" class="card-footer-item">Demo</a>
+                        </footer>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="title is-3">Contacto</h2>
+            <p class="content">
+                Correo: benjamintrujillo2612@gmail.com<br>
+                GitHub: <a href="https://github.com/zbenja19" target="_blank">github.com/zbenja19</a>
+            </p>
+        </div>
+    </section>
+
+   
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2026 Benjamin Ignacio Trujillo Poblete. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
