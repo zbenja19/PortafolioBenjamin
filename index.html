@@ -6,14 +6,15 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="/PaginaPortafolio/estilos/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"> 
+    <script src="/PaginaPortafolio/scripts/script.js"></script>
 </head>
 <body>
-
+    
     
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#hero">
-                <strong>Benjamín Trujillo</strong>
+                <strong>Presentación</strong>
             </a>
             <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
@@ -26,30 +27,50 @@
                 <a class="navbar-item" href="#about">Sobre mi</a>
                 <a class="navbar-item" href="#projects">Proyectos</a>
                 <a class="navbar-item" href="#contact">Contacto</a>
+                <button id="theme-toggle">🌓</button>
             </div>
         </div>
     </nav>
 
+
     
-    <section class="hero is-medium is-primary" id="hero">
-        <div class="hero-body">
-            <p class="title">Benjamín Trujillo</p>
-            <p class="subtitle">Desarrollador de Software/Desarrollador de Inteligencia Artificial</p>
-        </div>
-    </section>
+    <section class="hero is-medium is-primary" style="position: relative; overflow: hidden;">
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+    <div class="hero-body" style="position: relative; z-index: 2;">
+        <p class="title">Benjamín Trujillo</p>
+        <p class="subtitle">Desarrollador de Software/Desarrollador de Inteligencia Artificial</p>
+    </div>
+</section>
 
     
     <section class="section" id="about">
-        <div class="container">
-            <h2 class="title is-3">Sobre mí</h2>
-            <p class="content">
-                <p>Benjamín Trujillo</p>
-                <p>20 años</p>
-                <p>Estudiante de Ingeniería en Informática/Mención en Desarrollo de Inteligencia Artificial.</p>
-                <p>Cursando tercer año de la carrera en Duoc UC</p>
-            </p>
+    <div class="container">
+        <h2 class="title is-3">Sobre mí</h2>
+        <div class="content">
+            <p>Benjamín Trujillo</p>
+            <p>20 años</p>
+            <p>Estudiante de Ingeniería en Informática/Mención en Desarrollo de Inteligencia Artificial.</p>
+            <p>Cursando tercer año de la carrera en Duoc UC</p>
         </div>
-    </section>
+
+        <h3 class="title is-4" style="margin-top: 2rem;">Tecnologías que manejo</h3>
+        <div class="tags">
+            <span class="tag is-medium">HTML</span>
+            <span class="tag is-medium">CSS</span>
+            <span class="tag is-medium">JavaScript</span>
+            <span class="tag is-medium">Java</span>
+            <span class="tag is-medium">Python</span>
+            <span class="tag is-medium">PL/SQL</span>
+            <span class="tag is-medium">SQL</span>
+            <span class="tag is-medium">APEX</span>
+        </div>
+    </div>
+</section>
 
     
     <section class="section" id="projects">
@@ -86,7 +107,7 @@
                 <div class="column is-one-third">
                     <div class="card">
                         <div class="card-content">
-                            <p class="title is-5">Nombre del proyecto</p>
+                            <p class="title is-5">DropNorte</p>
                             <p class="content">.</p>
                         </div>
                         <footer class="card-footer">
@@ -112,11 +133,16 @@
     </section>
 
    
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>&copy; 2026 Benjamin Ignacio Trujillo Poblete. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <footer class="footer" style="position: relative; overflow: hidden; padding-top: 60px;">
+    <svg style="position: absolute; top: -1px; left: 0; width: 100%; height: 60px;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#141414"></path>
+    </svg>
+    <div class="content has-text-centered">
+        <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const burger = document.querySelector('.navbar-burger');
@@ -127,7 +153,7 @@
             });
         });
     </script>
-    
 
+    <script src="/PortafolioBenjamin/scripts/script.js"></script>
 </body>
 </html>
