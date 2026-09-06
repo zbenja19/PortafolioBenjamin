@@ -1,2 +1,2 @@
 # PortafolioBenjam-n
-Portafolio de titutlo Duoc UC Benjamín Ignacio trujillo Poblete
+Portafolio de titulo Duoc UC Benjamín Ignacio trujillo Poblete.
